@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.heading{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    
+}
+
+/* ========================= Past Events ========== */
+
+.container-past {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.past-text {
+    flex: 1; /* Allow text section to take available space */
+    max-width: 50%;
+    text-align: left; /* Left align text for better readability */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.past-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.past-text h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.past-text p {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.past-text p strong {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.img-section {
+    flex: 1; /* Allow image section to take available space */
+    max-width: 45%;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+}
+
+.img-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-past {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        padding: 20px;
+    }
+
+    .past-text {
+        max-width: 100%;
+        text-align: center; /* Center text on small screens */
+        padding-right: 0; /* Remove extra padding */
+    }
+
+    .img-section {
+        max-width: 100%;
+        margin-top: 20px; /* Add space above image on small screens */
+        justify-content: center; /* Center image horizontally */
+    }
+
+    .img-section img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 400px) {
+    .past-text h1 {
+        font-size: 1.5em;
+    }
+
+    .past-text p {
+        font-size: 1em;
+    }
+
+    .past-text p strong {
+        font-size: 1em;
+    }
+
+    .img-section img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+/* Collage Section */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    grid-gap: 10px;
+    flex: 1;
+    min-width: 300px; /* Ensure readability */
+    min-height: 10rem;
+}
+
+.collage-item {
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the grid cell */
+}
+
+.heading{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.heading h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    
+}
+
+.text-section {
+    max-width: 50%;
+    text-align: left;
+}
+.text-section h1{
+    margin-bottom: 10pxpx;
+    font-weight: bold;
+    padding-left: 6%;
+    color: black;
+    font-size: 35px;
+}
+.text-section h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    padding-left: 6%;
+    text-align: left;
+    color: black;
+} 
+.text-section p{
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.text-section  p strong {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 40px;
+} 
+.text-section {
+    flex: 1;
+    min-width: 300px; /* Ensure text section is readable */
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .collage, .text-section {
+        min-width: 100%; /* Stack sections vertically */
+        padding: 10px;
+    }
+
+    .collage {
+        grid-template-columns: 1fr; /* Stack images in one column */
+        grid-template-rows: repeat(4, 1fr); /* Stack images in one column */
+    }
+    .text-section p {
+        text-align: center;
+    }
+}
+
+
+
+/* Up Coming Events */
+
+.heading {
+    width: 80%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        width: 90%;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+}
+
+.container-upcoming {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start */
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upcoming-text {
+    flex: 1; /* Allow text section to take available space */
+    max-width: 50%;
+    text-align: left; /* Left align text for better readability */
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+.upcoming-text h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.upcoming-text h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.upcoming-text p {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upcoming-text p strong {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.img-section {
+    flex: 1; /* Allow image section to take available space */
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 5'0%;
+}
+
+.img-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-upcoming {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        padding: 20px;
+    }
+
+    .upcoming-text {
+        max-width: 100%;
+        text-align: center; /* Center text on small screens */
+        padding-right: 0; /* Remove extra padding */
+    }
+
+    .img-section {
+        max-width: 100%;
+        margin-top: 20px; /* Add space above image on small screens */
+        justify-content: center;
+    }
+
+    .img-section img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+

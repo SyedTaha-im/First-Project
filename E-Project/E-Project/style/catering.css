@@ -1,0 +1,321 @@
+/* Existing CSS */
+/* body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+body{
+    background-color: #fdfafa;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --main-color: #FE005F;
+    --main-light-color: rgb(255, 244, 244);
+    --secondary-color: black;
+}
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+/* .main-txt h1 span {
+    color: #f57284;
+} */
+.Gifts .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    height: auto;
+}
+.Gifts .card img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.Gifts .card .card-body {
+    background: transparent;
+}
+.Gifts .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.Gifts .card .card-body .card-icons {
+    margin: 15px 0;
+}
+.Gifts .card .card-body .card-icon {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.card-icon i{
+    color: var(--secondary-color);
+}
+
+.Gifts .card .card-body .card-icon i {
+    margin-right: 10px;
+}
+.Gifts .card .card-body .add-to-cart {
+    margin-top: 15px;
+}
+.cart {
+    padding: 5px 10px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-weight: 400;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    margin-top: 15px;
+    transition: all ease 0.4s;
+}
+
+.cart:hover {
+    background-color:rgb(243, 164, 176) ;
+    transform: scale(1.01);
+}
+
+
+/* For responsive design */
+@media (max-width: 767px) {
+    .Gifts .card .card-body .card-icons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+#banner{
+    width: 100%;
+    height: 5%;
+}
+/* bag */
+.quote{
+
+
+    width: 100%;
+    height: 80vh;
+    background: url(/E-Project/image/cateringbg.jpg.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* contact css */
+.container-1 {
+    max-width: 800px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    background-color:  rgb(253, 240, 243);
+    opacity: 0.9;
+    width: 800px;
+    padding: 55px 40px 10px 40px;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto;
+    
+}
+
+.container-1 .text {
+    text-align: center;
+    font-size: 35px;
+}
+
+.container-1 form {
+    padding: 30px 0 0 0;
+}
+
+.container-1 form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+.text {
+    color: #FE005F;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.input-data input:focus~label,
+.textarea textarea:focus~label,
+.input-data input:valid~label,
+.textarea textarea:valid~label {
+    transform: translateY(-15px);
+    font-size: 14px;
+    color: #FE005F;
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: transparent;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FE005F;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before,
+.textarea textarea:focus~.underline:before,
+.textarea textarea:valid~.underline:before {
+    transform: scale(1);
+}
+
+.submit-1 {
+    padding: 5px 10px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-weight: 400;
+    border-radius: 7px;
+    background-color: #FE005F ;
+    color: #ffffff;
+    margin-left: 20px;
+    transition: all ease 0.4s;
+}
+
+.submit-1 :hover {
+    background-color: rgb(238, 136, 153);;
+    color: #ffffff;
+    transform: scale(1.01);
+}
+
+/****** Media Query ******/
+
+@media (max-width: 811px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .container-1 {
+        padding: 5px;
+        width: 400px;
+        height: 550px;
+    }
+    .form{
+        width: 350px;
+        justify-content: center;
+    }
+    .text{
+        font-size: 4px;
+    }
+    form .form-row .input-data{
+        margin-top: 6px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .container-1 {
+        padding: 10px;
+    }
+    .input-data {
+        margin: 5px 0;
+    }
+    .input-data label {
+        font-size: 14px;
+    }
+    .input-data input,
+    .input-data textarea {
+        font-size: 14px;
+    }
+}
+@media (max-width: 430px) {
+    .container-1 {
+        padding: 5px;
+        width: 300px;
+    }
+    .form{
+        width: 200px;
+    }
+    .input-data {
+        margin: 3px 0;
+    }
+    .input-data label {
+        font-size: 12px;
+    }
+    .input-data input,
+    .input-data textarea {
+        font-size: 12px;
+    }
+    .submit {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+/********** Contact End **********/
+

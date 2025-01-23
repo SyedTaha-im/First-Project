@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==================TITLE ==============-->
+    <title>Shrek Juices</title>
+
+    <!-- ====================ICON================ -->
+    <link rel="shortcut icon" href="/E-Project/image/logo.jpeg">
+
+    <!-- ==================IMPORT FONTS============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ======================SWIPER JS=================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ===================Link Swiper's CSS============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- =======================FONT AWESOME CDN========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!----- BOOTSTRAP 5 ----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ==================CSS================= -->
+    <link rel="stylesheet" href="/E-Project/style/contact.css">
+
+</head>
+
+<body>
+     <!---------- Header Start ---------->
+     <header id="header">
+        <!-- Header Top Bar -->
+        <div class="header-top-bar">
+            <span>Discover our new collection! ✨ Special discounts on select items!  Free shipping on
+                orders over $100!
+            </span>
+        </div>
+    </header>
+    <!---------- Header End ---------->
+
+    <!---------- Navbar Start ---------->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-1" href="/Html/home.html"><img src="/E-Project/image/logo.jpeg" width="85px" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  me-3" aria-current="page" href="/E-Project/HTML/home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/E-Project/HTML/newarrivals.html">New Arrivals</a></li>
+                            <li><a class="dropdown-item" href="/E-Project/HTML/products.html">Featured Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active me-3" href="/E-Project/HTML/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="/E-Project/HTML/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="/E-Project/HTML/catering.html">Catering</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn text-brown me-2" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btn text-brown me-2"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <a href="/E-Project/HTML/contact.html" class="btn text-brown me-2"><i class="fa-regular fa-user"></i></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!---------- Navbar End ---------->
+
+    <!---------- Contact Start ---------->
+
+    <div class="container">
+
+        <div class="text">Get In Touch</div>
+        <form action="#" class="form">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="firstName" required>
+                    <div class="underline"></div>
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="lastName" required>
+                    <div class="underline"></div>
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" id="email" required>
+                    <div class="underline"></div>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="number" required>
+                    <div class="underline"></div>
+                    <label for="number">Number</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea id="message" rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="message">Message</label>
+                    <br />
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!---------- Contact End ---------->
+
+    <!---------- Map Start ---------->
+    <div class="map">
+        <div class="info">
+            <h5>Address</h5>
+            <p>Pakistan Sindh, Karachi City, Karachi, P.E.C.H.S. Block 2</p>
+            <br><br>
+            <h5>Contact</h5>
+            <p>+92 0321654987</p>
+            <p>+92 0321547893</p>
+            <br>
+            <h5>Email</h5>
+            <p>shrek.juices@gmail.com</p>
+        </div>
+        <div class="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14479.45104780199!2d67.03966235541989!3d24.86853640000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e8e2d9ead49%3A0x3f5b756b6c50f44a!2sJuicy%20Corner!5e0!3m2!1sen!2s!4v1736703783475!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+    </div>
+        <!---------- Map End ---------->
+        
+
+    
+    <!---------- Footer Start ---------->
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                    <li><a href="/E-Project/HTML/about.html">About Us</a></li>
+                    <li><a href="/E-Project/HTML/contact.html">Reviews</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                    <li><a href="#">Designs</a></li>
+                    <li><a href="#">Wedding Specials</a></li>
+                    <li><a href="/E-Project/HTML/newarrivals.html">New Arrivals</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="/E-Project/HTML/products.html">Featured Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Social</h4>
+                <ul class="links">
+                    <li><a href="#">Daraz</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">PicsArt</a></li>
+                    <li><a href="#">Snapchat</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="logo"><img src="/E-Project/image/logo.jpeg" height="50px" width="50px"  alt="Logo"></div>
+                <p>Stay connect to get more update about new products.</p>
+                <form action="#">
+                    <button type="submit">Sign in</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- Footer End ---------->
+
+
+
+
+
+
+
+    <!----- BOOTSTRAP 5 ----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Js -->
+    <script src="/E-Project/JAVA/contact.js"></script>
+</body>
+
+</html>
